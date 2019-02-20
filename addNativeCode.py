@@ -95,7 +95,7 @@ def getOCFuncText(header_text):
 
     code2 = [
         "\tBOOL %s = YES;\n" % (text2_arg3),
-        "\tNSInter %s = %s;\n" % (text2_arg4, random.randint(1, 100)),
+        "\tNSInteger %s = %s;\n" % (text2_arg4, random.randint(1, 100)),
         "\tNSMutableDictionary *%s = [NSMutableDictionary dictionaryWithCapacity:2];\n" % (text2_arg1),
         "\t[%s setValue:@(%s) forKey:@\"%s\"];\n" % (text2_arg1, text2_arg3, getOneName()),
         "\t[%s setValue:@(%s) forKey:@\"%s\"];\n" % (text2_arg1, text2_arg4, getOneName()),
